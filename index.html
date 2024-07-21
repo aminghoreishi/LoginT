@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in </title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="dark:bg-slate-800">
+    <div class="flex min-h-screen items-center justify-center">
+
+        <div class=" *:dark:text-white w-[300px]">
+            <div class="flex items-center justify-between">
+                <h1>Hello</h1>
+                <div class="">
+                    <svg class="size-5 svgg">
+                        <use href="#dark"></use>
+                        <use href="#sun"></use>
+                    </svg>
+                </div>
+            </div>
+            <form class="mt-5 form flex flex-col gap-y-5 shadow-2xl rounded-xl p-5">
+                <div class="flex flex-col gap-y-3 ">
+                    <div class="relative">
+                        <label class="text-sm abs transition-all  absolute bg-white dark:bg-slate-800 top-2.5 left-2" for="">Your name</label>
+                        <input
+                            class="outline-none w-full name rounded-lg bg-transparent border border-gray-400 dark:border-gray-100/15   p-2 focus:ring-2 focus:ring-blue-700"
+                            type="text" required>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-y-3 ">
+                    <div class="relative">
+                        <label class="text-sm abjs transition-all  absolute bg-white dark:bg-slate-800 top-2.5 left-2" for="">Your password</label>
+                        <input
+                            class="outline-none w-full pass rounded-lg bg-transparent border border-gray-400 dark:border-gray-100/15   p-2 focus:ring-2 focus:ring-blue-700"
+                            type="text" required>
+                    </div>
+                </div>
+              
+                <div class="flex items-center gap-x-1 ">
+
+                    <input class="outline-none border-0 rounded border-blue-900 focus:ring-blue-700" type="checkbox"
+                        id="check" required>
+                    <label for="check" class="text-xs select-none">I agree with the terms and conditions</label>
+
+                </div>
+                <div class="">
+                    <button type="submit"
+                        class="text-white bg-blue-700 btn p-2 rounded-lg transition-all hover:bg-blue-800">Create
+                        account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <svg class="hidden">
+        <symbol id="dark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class=" block dark:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </symbol>
+        <symbol id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class=" hidden dark:block">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+        </symbol>
+
+    </svg>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
